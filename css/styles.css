@@ -1,152 +1,60 @@
-body {
-    background-color: grey;
-    margin: 0 70px 0 70px;
+img {
+    height: 500px;
 }
 
-main {
-    margin-top: 45px;
+#desktop-image {
+    display: none;
 }
 
-body header nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+/* small (S)*/
+@media (min-width: 640px) {
+    #desktop-image {
+        display: block;
+    }
+    #mobile-image {
+        display: none;
+    }
 }
 
-li {
-    padding: 0 16px 0 16px;
+/* Medium (M)*/
+@media (min-width: 768px) {
+    #desktop-image {
+        display: block;
+    }
+    #mobile-image {
+        display: none;
+    }
+    h2 {
+        color: red;
+    }
 }
 
-li a {
-    text-decoration: none;
-    color: #fff;
-    background-color: brown;
-    padding: 8px 16px 8px 16px;
-    border-radius: 8px;
+/* large (L) */
+@media (min-width: 1024px) {
+    #desktop-image {
+        display: block;
+    }
+    #mobile-image {
+        display: none;
+    }
 }
 
-li a:hover {
-    background-color: red;
+/* x-Large (xl) */
+@media (min-width: 1280px) {
+    #desktop-image {
+        display: block;
+    }
+    #mobile-image {
+        display: none;
+    }
 }
 
-
-h1 {
-    color: #fff;
-}
-
-/* This is a universal selector */
-* {
-    font-family: 'Times New Roman', Times, serif;
-    color: orange;
-}
-
-/* This is a tag selector */
-p {
-    color: burlywood;
-}
-
-/* This is a class selector */
-.highlight {
-    background-color: green;
-    max-width: fit-content;
-}
-
-/* This is a id selector */
-#under-section {
-    color: orange;
-}
-
-/* This is descendant selector */
-article p {
-    color: pink;
-}
-
-article h2 {
-    color: blue;
-}
-
-footer {
-    background-color: azure;
-    height: 100px;
-    width: 100vw;
-    position: relative;
-    bottom: 0;
-    overflow: hidden;
-}
-
-/* This is Child selector ( parent > child ) matches the direct child of the spesific element */
-ol > li {
-    color: yellowgreen;
-}
-
-ol li:last-child {
-    letter-spacing: 12px;
-}
-
-/* Selects the second child ( to change the child-element, change the number to the desired one. ) */
-ol li:nth-child(2) {
-    border: solid 2px black;
-}
-
-
-
-/* Sibling selector ( selects the direct sibling after the first element ,       This would only select the p ) */
-h2 + p {
-    letter-spacing: 10px;
-}
-
-/* General sibling selector ( This will select all the sibling of the first element. all the p will be selected. )*/
-h2 ~ p {
-    background: brown;
-}
-
-input[type="text"] {
-    color: blue;
-    font-size: 18px;
-}
-
-#submit-button {
-    background-color: lightblue;
-    padding: 12px;
-    border-radius: 8px;
-    color: #000;
-    font-size: 24px;
-}
-
-#submit-button:hover {
-    background-color: rgb(30, 30, 193);
-    font-weight: bold;
-}
-
-a {
-    background-color: blue;
-    padding: 12px;
-    border-radius: 8px;
-}
-
-a:hover {
-    color: lightcoral;
-    background-color: lightblue;
-}
-
-/* This will select all the p and add text infront */
-p::before {
-    content: "before - ";
-    font-size: 24px;
-}
-
-/* This will select all the p and add text at the end. */
-p::after {
-    content: " - After";
-}
-
-/* This is group selector ( use a comma to add multiple elements )*/
-h1, p, h2 {
-    border-bottom: dotted 2px black;
-}
-
-/* combine selector */
-.last-paragraph::first-letter {
-    font-size: 96px;
-    initial-letter: 6 6;
+/* xx-Large (xxl)*/
+@media (min-width: 1536px) {
+    #desktop-image {
+        display: block;
+    }
+    #mobile-image {
+        display: none;
+    }
 }
