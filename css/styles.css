@@ -150,3 +150,39 @@ h1, p, h2 {
     font-size: 96px;
     initial-letter: 6 6;
 }
+
+#submit:hover {
+    background-color: red;
+}
+
+#submit:focus {
+    background-color: blue;
+}
+
+#email, #fname {
+    display: block;
+}
+
+#fname:required {
+    background-color: red;
+}
+
+/* Will chose all the even numbers */
+li:nth-child(even) {
+    color: green;
+}
+
+/* Will chose all the odd numbers */
+li:nth-child(odd) {
+    color: yellow;
+}
+
+/* i want to select every second child */
+li:nth-child(2n) {
+    background-color: lightblue;
+}
+
+/* if you want to skip the first child */
+li:nth-child(2n + 1) {
+    border-bottom: solid 3px black;
+}
