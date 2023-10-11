@@ -1,152 +1,53 @@
-body {
-    background-color: grey;
-    margin: 0 70px 0 70px;
-}
-
-main {
-    margin-top: 45px;
-}
-
-body header nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-li {
-    padding: 0 16px 0 16px;
-}
-
-li a {
-    text-decoration: none;
-    color: #fff;
-    background-color: brown;
-    padding: 8px 16px 8px 16px;
-    border-radius: 8px;
-}
-
-li a:hover {
-    background-color: red;
-}
-
-
-h1 {
-    color: #fff;
-}
-
-/* This is a universal selector */
-* {
-    font-family: 'Times New Roman', Times, serif;
-    color: orange;
-}
-
-/* This is a tag selector */
-p {
-    color: burlywood;
-}
-
-/* This is a class selector */
-.highlight {
-    background-color: green;
-    max-width: fit-content;
-}
-
-/* This is a id selector */
-#under-section {
-    color: orange;
-}
-
-/* This is descendant selector */
-article p {
-    color: pink;
-}
-
-article h2 {
-    color: blue;
-}
-
-footer {
-    background-color: azure;
+.div-1 {
+    background-color: aqua;
+    width: 100px;
     height: 100px;
-    width: 100vw;
-    position: relative;
-    bottom: 0;
-    overflow: hidden;
+    padding: 10px 10px 0 10px;
+    margin: 10px 0 10px 0;
+    /* box-sizing: content-box; */
+    /* will always be the max width and height ( border-box will calculate the margin, padding and border to be the set width and height )*/
+    box-sizing: border-box;
 }
 
-/* This is Child selector ( parent > child ) matches the direct child of the spesific element */
-ol > li {
-    color: yellowgreen;
+.div-2 {
+    background-color: pink;
+    width: 100px;
+    height: 100px;
+    margin: 15px 0 15px 0;
 }
 
-ol li:last-child {
-    letter-spacing: 12px;
+#circle {
+    background-color: bisque;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    border: 3px solid black;
+    box-sizing: border-box;
 }
 
-/* Selects the second child ( to change the child-element, change the number to the desired one. ) */
-ol li:nth-child(2) {
-    border: solid 2px black;
+
+/* id, class, tag ( from most important to least. css will use the id for coloring because it's "stronger" )*/
+/* 0, 1, 0, 0 */
+#head2-id {
+    color: green;
 }
 
-
-
-/* Sibling selector ( selects the direct sibling after the first element ,       This would only select the p ) */
-h2 + p {
-    letter-spacing: 10px;
-}
-
-/* General sibling selector ( This will select all the sibling of the first element. all the p will be selected. )*/
-h2 ~ p {
-    background: brown;
-}
-
-input[type="text"] {
+/* 0, 0, 1, 0 */
+.head2 {
     color: blue;
-    font-size: 18px;
 }
 
-#submit-button {
-    background-color: lightblue;
-    padding: 12px;
-    border-radius: 8px;
-    color: #000;
-    font-size: 24px;
+/* 0, 0, 0, 1 */
+h2 {
+    color: red;
 }
 
-#submit-button:hover {
-    background-color: rgb(30, 30, 193);
-    font-weight: bold;
+/* 1, 0, 0, 1 ( The most important, but DON'T use it!!! )*/ 
+h2 {
+    color: yellowgreen !important; 
 }
 
-a {
-    background-color: blue;
-    padding: 12px;
-    border-radius: 8px;
-}
 
-a:hover {
-    color: lightcoral;
-    background-color: lightblue;
-}
-
-/* This will select all the p and add text infront */
-p::before {
-    content: "before - ";
-    font-size: 24px;
-}
-
-/* This will select all the p and add text at the end. */
-p::after {
-    content: " - After";
-}
-
-/* This is group selector ( use a comma to add multiple elements )*/
-h1, p, h2 {
-    border-bottom: dotted 2px black;
-}
-
-/* combine selector */
-.last-paragraph::first-letter {
-    font-size: 96px;
-    initial-letter: 6 6;
+p {
+    color: aqua;
 }
