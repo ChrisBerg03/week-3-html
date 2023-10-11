@@ -163,6 +163,10 @@ h1, p, h2 {
     display: block;
 }
 
+#email:disabled {
+    background-color: brown;
+}
+
 #fname:required {
     background-color: red;
 }
