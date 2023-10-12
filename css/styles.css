@@ -2,21 +2,20 @@
     box-sizing: border-box;
 }
 
-body {
-    display: block;
-}
-
 .div-1 {
     background-color: brown;
 }
+
 
 .span-1 {
     background-color: aquamarine;
 }
 
+
 .span-2 {
     background-color: burlywood;
 }
+
 
 .div-2 {
     background-color: tomato;
