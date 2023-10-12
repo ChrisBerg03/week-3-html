@@ -3,23 +3,28 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
+body {
+    margin: 0;
+}
+
 nav {
     display: none;
     background-color: brown;
-    border-radius: 12px;
-    padding: 12px;
+    padding: 8px;
+    position: absolute;
+    width: 100vw;
 }
 
 nav a {
     color: #fff;
     background-color: darkcyan;
-    padding: 12px;
+    padding: 8px;
     border-radius: 12px;
 }
 
 
 nav li {
-    padding: 6px 6px;
+    padding: 10px 10px;
 }
 
 nav ul {
