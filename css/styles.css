@@ -1,22 +1,39 @@
 * {
     box-sizing: border-box;
+    font-size: 12px;
 }
 
-.div-1 {
+/* .parent-div {
+    width: 200px;
+    height: 500px;
+    border: 2px solid black;
+}
+
+.item {
     background-color: brown;
 }
 
-
-.span-1 {
-    background-color: aquamarine;
+.item-percent {
+    width: 50%;
+    height:50%;
 }
 
+.item-view-width {
+    width: 50vw;
+    height: 50vh;
+} */
 
-.span-2 {
-    background-color: burlywood;
+
+.parent {
+    font-size: 20px;
 }
 
+/* rem will adjust acording to the root font size. If the root font size is 12px, and the rem is 2rem. The font size will be 24px */
+.item-rem {
+    font-size: 2rem;
+}
 
-.div-2 {
-    background-color: tomato;
+/* em will adjust size acording to it's direct parents font size. If the parents font size is 20px, and the rem is 2em. The font size will be 40px */
+.item-em {
+    font-size: 2em;
 }
