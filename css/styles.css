@@ -1,39 +1,92 @@
 * {
     box-sizing: border-box;
-    font-size: 12px;
 }
 
-/* .parent-div {
-    width: 200px;
-    height: 500px;
+.container {
     border: 2px solid black;
+    height: 400px;
+    width: 500px;
+    display: flex;
+
+    /* This is a shorthand for flex-wrap and flex-direction 
+    flex-flow: row wrap */
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    /* X-axis 
+    justify-content: flex-start; ( default )
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around; */
+
+    /* Y-axis
+    align-items: strech; ( Default )
+    align-items: center;
+    align-items: flex-start;
+    align-items: flex-end; */
+
+    /* align-content is definging the spaceing between elements
+    align-content: flex-start;
+    align-content: flex-end;
+    align-content: space-around; */
+
 }
 
 .item {
-    background-color: brown;
+    border: 1px solid brown;
+    background-color: blanchedalmond;
+    width: 75px;
+    color: black;
+    margin: 12px;
 }
 
-.item-percent {
-    width: 50%;
-    height:50%;
+.item-1 {
+    height: 50px;
+    order: 3;
 }
 
-.item-view-width {
-    width: 50vw;
-    height: 50vh;
-} */
-
-
-.parent {
-    font-size: 20px;
+.item-2 {
+    height: 100px;
+    order: 4
 }
 
-/* rem will adjust acording to the root font size. If the root font size is 12px, and the rem is 2rem. The font size will be 24px */
-.item-rem {
-    font-size: 2rem;
+.item-3 {
+    height: 150px;
+    order: 5;
+
+    /* This element won't change no matter what happens to the container 
+    flex-shrink: 0;     
+
+    This element will do the opposite
+    flex-grow: 1; */
 }
 
-/* em will adjust size acording to it's direct parents font size. If the parents font size is 20px, and the rem is 2em. The font size will be 40px */
-.item-em {
-    font-size: 2em;
+.item-4 {
+    height: 250px;
+    order: 2;
+
+}
+
+.item-5 {
+    height: 300px;
+    order: 3
+
+    /* align-self will chose the element it's being used on and move it
+    align-self: flex-end; */
+}
+
+
+.container-2 {
+    border: 2px solid black;
+    background-color: antiquewhite;
+    height: 400px;
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
