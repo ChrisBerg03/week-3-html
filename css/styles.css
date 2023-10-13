@@ -1,94 +1,84 @@
+:root {
+    --main-background-color: #D5E1EF;
+}
+
 * {
     box-sizing: border-box;
-    font-family: Monospace, 'Times New Roman', serif
+    
 }
 
 body {
-    margin: 0;
-    background-color: bisque;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: var(--main-background-color);
     height: 100vh;
-}
-
-.modal-container {
-    height: 80vh;
-    background-color: aliceblue;
-    width: 900px;
-    max-width: 80%;
-    overflow: auto;
-    border-radius: 12px;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-/* .modal-all-div {
-    
-} */
+.qr-container {
+    background-color: #fff;
+    border-radius: 20px;
+    width: 320px;
+    height: 497px;
+}
 
-.modal-header {
-    padding: 1rem;
+.qr-header {
+    width: 288px;
+    height: 288px;
+    background-color: #2C7DFA;
+    border-radius: 10px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border-bottom: solid 2px #000;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 16px 16px 0 16px;
 }
 
-.modal-header-title {
-    align-self: center;
-    font-size: 1.5rem;
+.qr-body-header, .body-sub-heading {
+    text-align: center;
+    font-family: 'Outfit', sans-serif;
 }
 
-.modal-header-close-header {
-    border: none;
-    background: none;
-    font-size: 1.5rem;
-    align-self: flex-start;
-    cursor: pointer;
+.qr-body-header {
+    font-weight: bold;
+    font-size: 22px;
+    margin: 24px 16px 16px 16px;
+    color: #1F314F;
 }
 
-.modal-body {
-    padding: 1rem;
-    overflow: auto;
-    flex-grow: 1;
+.body-sub-heading {
+    font-size: 15px;
+    margin: 0 32px 40px 32px;
+    color: #7D889E;
 }
 
-.modal-footer {
-    padding: .5rem 1rem .5rem 1rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-content: flex-end;
-    border-top: solid 2px #000;
-    gap: .5rem;
+.circle1-span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
-.modal-btn {
-    border: none;
-    background: none;
-    font-size: 1rem;
-    color: #fff;
-    border-radius: .5rem;
-    height: 2rem;
-    padding: .5rem 1rem;
-}
-
-.modal-footer-ok {
-    cursor: pointer;
-    background-color: #00ff00;
-}
-
-.modal-footer-danger {
-    cursor: pointer;
-    background-color: #ff0000;
+/* Small (sm) */
+@media (min-width: 640px) {
 
 }
 
-.modal-footer-ok:hover, .modal-footer-ok:hover {
-    background-color: #00aa00;
+/* Medium (md) */
+@media (min-width: 768px) {
+    /* Your styles for the medium breakpoint here */
 }
 
-.modal-footer-danger:hover, .modal-footer-danger:focus {
-    background-color: #aa0000;
+/* Large (lg) */
+@media (min-width: 1024px) {
+    /* Your styles for the large breakpoint here */
+}
+
+/* Extra Large (xl) */
+@media (min-width: 1280px) {
+    /* Your styles for the extra large breakpoint here */
+}
+
+/* 2XL (2xl) */
+@media (min-width: 1536px) {
+    /* Your styles for the 2XL breakpoint here */
 }
