@@ -11,35 +11,60 @@ body {
 .parent {
     background-color:orange;
     padding: .25rem;
-    position: relative;
-    height: 50%;
+    height: 40%;
+    z-index: 10;
+    position: fixed;
+    width: 100vw;
 }
 
 .child-1 {
     background-color: aqua;
     padding: .25rem;
+    top: 10px;
     position: relative;
-    /* bottom: 20px;
-    right: 20px; */
-    /* will be relative to the rest of the elements. You can move this without effecting the other elements. */
+    z-index: 10;
 }
 
 .child-2 {
     background-color: bisque;
     padding: .25rem;
-    /* position: absolute;
-    top: 50px;
-    left: 150px; */
-    /* Will follow the first parent with position relative */
+    position: relative;
 }
 
 .child-3 {
     background-color: brown;
     padding: .25rem;
-    /* position: fixed;
+    position: relative;
+    bottom: 20px;
+}
 
-    position: sticky;
-    top: 0; */
-    /* will be sticky to the screen when scolling, will stop with the parent. */
+
+
+
+.parent-2 {
+    background-color:darkcyan;
+    padding: .25rem;
+    height: 20%;
+    z-index: 20;
+    position: relative;
+    top: 180px;
+    /* this will be on top of parent 1 because it has a higher z-index */
+}
+
+.child-4 {
+    background-color: aqua;
+    padding: .25rem;
+    bottom: 300px;
+}
+
+.child-5 {
+    background-color: bisque;
+    padding: .25rem;
+}
+
+.child-6 {
+    background-color: brown;
+    padding: .25rem;
+    bottom: 20px;
 }
 
