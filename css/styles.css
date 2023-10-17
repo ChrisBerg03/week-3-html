@@ -21,6 +21,7 @@ body {
     position: relative;
     /* bottom: 20px;
     right: 20px; */
+    /* will be relative to the rest of the elements. You can move this without effecting the other elements. */
 }
 
 .child-2 {
@@ -29,7 +30,7 @@ body {
     /* position: absolute;
     top: 50px;
     left: 150px; */
-    
+    /* Will follow the first parent with position relative */
 }
 
 .child-3 {
@@ -39,6 +40,6 @@ body {
 
     position: sticky;
     top: 0; */
-
+    /* will be sticky to the screen when scolling, will stop with the parent. */
 }
 
